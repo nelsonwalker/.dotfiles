@@ -6,3 +6,5 @@ ln -s ~/.dotfiles/regolith2 ~/.config/regolith2
 
 ln -s ~/.dotfiles/.vimrc ~/.vimrc
 
+ln -s ~/.dotfiles/nvim ~/.config/nvim
+

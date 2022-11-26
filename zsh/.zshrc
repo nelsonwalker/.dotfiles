@@ -113,6 +113,9 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias note='vim /home/nelson/Documents/notes/$(date +"%Y-%m-%d")'
+alias gonotes="pushd /home/nelson/Documents/notes"
+
 export ZSHRC=~/.zshrc
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
@@ -129,3 +132,7 @@ zvm_after_init_commands+=(source_fzf)
 
 
 [[ -s "/home/nelson/.gvm/scripts/gvm" ]] && source "/home/nelson/.gvm/scripts/gvm"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
